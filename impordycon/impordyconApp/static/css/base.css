@@ -1,0 +1,55 @@
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #f8f8f8;
+    background-color: #b34a4a;;
+}
+#informacion{
+    float: left;
+}
+#informacion h1{
+    font-family: 'Cabin', sans-serif;
+}
+#contacto{
+    float: right;
+}
+#contacto > h3{
+    font-family: 'Courgette', cursive;
+}
+.fa-whatsapp{
+    font-size:24px;
+    color: #f8f8f8;
+}
+.glyphicon-earphone{
+    color: #f8f8f8;
+    font-size:19px;
+}
+.navbar-default {
+    background-color: #c67878;
+    border-color: #b34a4a;;
+    border-radius: 0px;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #f8f0e9;
+}
+.navbar-default .navbar-brand {
+    color: #f8f8f8;
+}
+footer{
+    text-align: center;
+    color: white;
+    background-color: #9e1717;
+    padding: 10px;
+}
+footer p{
+    margin: 0px;
+}
+
+
+@media screen and (max-width: 480px) {
+    #informacion{
+        float: none;
+    }
+    #contacto{
+        float: none;
+        margin-bottom: 20px;
+    }
+}

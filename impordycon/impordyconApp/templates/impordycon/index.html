@@ -1,0 +1,78 @@
+{% extends "impordycon/base.html" %}
+{% load static %}
+{% block title %}
+IMPORDYCOM
+{% endblock %}
+{% block extraStyle %}
+<link href="{% static "css/index.css" %}" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+{% endblock %}
+{% block contenido %}
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="{% static "imagenes/acero.jpg" %}" alt="acero" style="width:100%;">
+        </div>
+        <div class="item">
+            <img src="{% static "imagenes/granito.jpg" %}" alt="granito" style="width:100%;">
+        </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<div id="nuestros-productos">
+    <h3 class="subtitulos">PRODUCTOS MÁS VENDIDOS</h3>
+    <div class="imagen col-xs-6 col-sm-3 col-md-3 col-lg-3">
+	    <img src="{% static "imagenes/granito.JPG" %}" alt="imagen">
+	    <div class="detalles">
+	        <div class="text"><a href=""><span class="glyphicon glyphicon-eye-open"></span></a></div>
+    	</div>
+    	<div class="nombre-producto">
+    	    Granito
+    	</div>
+	</div>
+	<div class="imagen col-xs-6 col-sm-3 col-md-3 col-lg-3">
+	    <img src="{% static "imagenes/puertas-inox1.png" %}" alt="imagen">
+	    <div class="detalles">
+	        <div class="text"><a href=""><span class="glyphicon glyphicon-eye-open"></span></a></div>
+        </div>
+        <div class="nombre-producto">
+    	    Puertas de acero inoxidable
+    	</div>
+	</div>
+	<div class="imagen col-xs-6 col-sm-3 col-md-3 col-lg-3">
+	    <img src="{% static "imagenes/planchas.jpg" %}" alt="imagen">
+	    <div class="detalles">
+	        <div class="text"><a href=""><span class="glyphicon glyphicon-eye-open"></span></a></div>
+    	</div>
+    	<div class="nombre-producto">
+    	    Planchas de acero inoxidable
+    	</div>
+	</div>
+	<div class="imagen col-xs-6 col-sm-3 col-md-3 col-lg-3">
+	    <img src="{% static "imagenes/estampadas.JPG" %}" alt="imagen">
+	    <div class="detalles">
+	        <div class="text"><a href=""><span class="glyphicon glyphicon-eye-open"></span></a></div>
+    	</div>
+    	<div class="nombre-producto">
+    	    Planchas estampadas
+    	</div>
+	</div>
+	<div class="spacer"></div>
+	<div id="boton-catalogo">
+	    <button type="button" class="btn btn-danger">Visita nuestro catálogo</button>
+	</div>
+</div>
+{% endblock %}
