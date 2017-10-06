@@ -4,5 +4,5 @@ from impordyconApp import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^impordycom/', include('impordyconApp.urls')),
+    url(r'^impordycom/', include('impordyconApp.urls', namespace="impordycon")),
 ]

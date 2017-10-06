@@ -43,6 +43,12 @@
                     <li><a href="#">Nosotros</a></li>
                     <li><a href="#">Contáctenos</a></li>
                 </ul>
+				{% if usuario != null %}
+				<ul class="nav navbar-nav navbar-right">
+		            <li><a href="{% url 'impordycon:login' %}"><span class="glyphicon glyphicon-user"></span> {{ usuario }}</a></li>
+		            <li><a href="{% url 'impordycon:cerrarSesion' %}"><span class="glyphicon glyphicon-log-out"></span> Cerrar sesión</a></li>
+	            </ul>
+				{% endif %}
             </div>
             </div>
         </nav>
